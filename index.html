@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunar Defense | Endpoint Security, Engineered for iOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'void-black': '#0A0B0F',
+                        'deep-navy': '#1A1D28',
+                        'orbital-blue': '#4B63F5',
+                        'lunar-silver': '#A8B2C8',
+                        'signal-white': '#FAFBFC',
+                        'horizon-cyan': '#00D9FF',
+                    },
+                    fontFamily: {
+                        sans: ['IBM Plex Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Apply IBM Plex Sans globally */
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            background-color: #0A0B0F; /* Void Black */
+            color: #FAFBFC; /* Signal White */
+        }
+
+        /* Subtle Dark Gradient Overlay for depth */
+        .gradient-bg {
+            background-color: #0A0B0F;
+            background-image: radial-gradient(at 0% 0%, rgba(75, 99, 245, 0.15) 0%, transparent 50%), 
+                              radial-gradient(at 100% 100%, rgba(26, 29, 40, 0.5) 0%, transparent 70%);
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom Scroll Margin for Header Navigation */
+        section {
+            scroll-margin-top: 5rem; /* Adjust this value based on header height */
+        }
+    </style>
+</head>
+<body class="gradient-bg antialiased">
+
+    <header class="sticky top-0 z-50 bg-void-black/95 backdrop-blur-sm border-b border-deep-navy shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#" class="flex items-center space-x-3">
+                    <svg width="32" height="36" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Lunar Defense Monogram</title>
+                        <defs>
+                            <path d="M0,0 L246.344195,0 L246.344195,272.681453 L0,272.681453 L0,0 Z" id="path-1"></path>
+                        </defs>
+                        <g stroke="none" fill="none" fill-rule="evenodd">
+                            <g transform="translate(27, 14)" xlink:href="#path-1" fill="#FAFBFC">
+                                <path d="M163.564191,1.3407301 C207.987662,1.3407301 244,61.7822889 244,136.34073 C244,210.899171 207.987662,271.34073 163.564191,271.34073 C163.304665,271.34073 163.045425,271.338667 162.786478,271.334551 C179.344579,250.006202 190.376128,211.840323 190.376128,168.306247 C190.376128,101.460748 164.367217,47.2717646 132.283599,47.2717646 C114.540749,47.2717646 98.6557267,63.8443823 88,89.9652393 C99.2698137,38.2518581 128.8487,1.3407301 163.564191,1.3407301 Z" id="Combined-Shape" transform="translate(166.0002, 136.3407) rotate(1) translate(-166.0002, -136.3407)"></path>
+                                <path d="M26.6595801,1.34072655 L68.0688562,1.34072655 C72.4871342,1.34072655 76.0688562,4.92244855 76.0688562,9.34072655 C76.0688562,9.58400934 76.0577587,9.82716551 76.0355984,10.0694369 L58.0247074,206.976371 C57.8234796,209.176326 59.4437682,211.12287 61.6437233,211.324098 C61.764859,211.335178 61.8864371,211.340727 62.0080785,211.340727 L148.863101,211.340725 C148.864889,211.340727 148.866677,211.340727 148.868465,211.340725 C162.956155,211.341093 170,214.341093 170,220.340727 C170,229.340727 160,261.340727 147.90546,271.340727 C101.46676,271.340727 55.0280603,271.340727 8.5893603,271.340727 C4.17108231,271.340727 0.589360305,267.759005 0.589360305,263.340727 C0.589360305,263.151312 0.596087395,262.961957 0.609528855,262.773021 L18.6797486,8.77302061 C18.9776513,4.58561845 22.4615945,1.34072655 26.6595801,1.34072655 Z" id="Rectangle-2"></path>
+                            </g>
+                        </g>
+                    </svg>
+                    <span class="text-2xl font-bold text-signal-white">Lunar Defense</span>
+                </a>
+                
+                <nav class="hidden md:flex space-x-8 text-lunar-silver text-sm font-medium">
+                    <a href="#problem" class="hover:text-orbital-blue transition duration-300">The Problem</a>
+                    <a href="#solution" class="hover:text-orbital-blue transition duration-300">The Solution</a>
+                    <a href="#validation" class="hover:text-orbital-blue transition duration-300">Validation</a>
+                    <a href="#contact" class="px-4 py-2 bg-orbital-blue text-signal-white rounded-lg hover:bg-[#3d53d9] transition duration-300 font-semibold shadow-xl shadow-orbital-blue/20" aria-label="Request a demo">
+                        Request a Demo
+                    </a>
+                </nav>
+                
+                <div class="md:hidden">
+                    <a href="#contact" class="px-4 py-2 bg-orbital-blue text-signal-white text-sm rounded-lg hover:bg-[#3d53d9] transition duration-300 font-semibold" aria-label="Mobile Request a demo">Demo</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="py-24 md:py-40 border-b border-deep-navy">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p class="text-orbital-blue uppercase tracking-widest text-sm font-semibold mb-3">Endpoint Security, Engineered for iOS</p>
+                <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold leading-tight mb-6 text-signal-white">
+                    Your iOS devices are <br class="hidden md:block">
+                    <span class="relative inline-block">
+                        flying blind.
+                        <span class="absolute left-0 right-0 bottom-1 h-2 bg-orbital-blue/50 -z-10"></span>
+                    </span>
+                </h1>
+                <p class="max-w-3xl mx-auto text-xl text-lunar-silver mb-10 font-light">
+                    Federal agencies deploy thousands of iPhones and iPads; but have <strong>zero endpoint visibility</strong>. Traditional EDR doesn't work on iOS; MDM wasn't built for threat detection. You're defending half your attack surface with one hand tied behind your back.
+                </p>
+                
+                <div class="flex justify-center space-x-4">
+                    <a href="#contact" class="px-8 py-4 bg-orbital-blue text-signal-white text-lg font-bold rounded-xl hover:bg-[#3d53d9] transition duration-300 shadow-2xl shadow-orbital-blue/30 transform hover:scale-[1.02] active:scale-[0.98] transition-transform">
+                        Request Demo
+                    </a>
+                    <a href="#contact" class="px-8 py-4 bg-deep-navy text-lunar-silver text-lg font-medium rounded-xl border border-deep-navy hover:border-orbital-blue hover:text-signal-white transition duration-300 transform hover:scale-[1.02] active:scale-[0.98] transition-transform">
+                        Talk to Sales
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="problem" class="py-20 md:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-signal-white">The iOS Security Gap</h2>
+                <div class="h-1 w-20 bg-horizon-cyan mx-auto mb-12"></div>
+                <p class="max-w-4xl mx-auto text-xl text-lunar-silver font-light leading-relaxed">
+                    When a sophisticated threat hits your iOS fleet, you're <strong>in the dark</strong>. No runtime monitoring. No behavioral analysis. No incident response capability. Just hope; and that's not a security strategy.
+                </p>
+                <p class="max-w-4xl mx-auto text-xl text-lunar-silver font-light leading-relaxed mt-6 border-l-4 border-orbital-blue pl-4">
+                    <strong>Traditional endpoint security stops at the desktop.</strong> But your adversaries don't. Lunar Defense changes that.
+                </p>
+            </div>
+        </section>
+        
+        <section id="solution" class="py-20 md:py-32 bg-deep-navy border-t border-b border-void-black">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <p class="text-horizon-cyan uppercase tracking-widest text-sm font-semibold mb-3">Our Platform</p>
+                        <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-signal-white">Built for iOS. Built for the Mission.</h2>
+                        <p class="text-lg text-lunar-silver mb-10 font-light">
+                            Lunar Defense delivers the endpoint visibility and threat detection federal agencies need; <strong>architected specifically for iOS from the ground up.</strong>
+                        </p>
+
+                        <ul class="space-y-6">
+                            <li class="flex items-start space-x-3">
+                                <span class="text-2xl text-orbital-blue flex-shrink-0">🚀</span>
+                                <div>
+                                    <h3 class="font-semibold text-signal-white text-xl">Runtime Threat Detection</h3>
+                                    <p class="text-lunar-silver text-base">Catches what static defenses miss, providing real-time operational security.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-2xl text-orbital-blue flex-shrink-0">🧠</span>
+                                <div>
+                                    <h3 class="font-semibold text-signal-white text-xl">Advanced Behavioral Analysis</h3>
+                                    <p class="text-lunar-silver text-base">Identifies anomalies and zero-day threats before they become catastrophic breaches.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-2xl text-orbital-blue flex-shrink-0">🔒</span>
+                                <div>
+                                    <h3 class="font-semibold text-signal-white text-xl">Federal-Grade Compliance</h3>
+                                    <p class="text-lunar-silver text-base">Ready for classified environments and strict regulatory mandates.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-2xl text-orbital-blue flex-shrink-0">⚡️</span>
+                                <div>
+                                    <h3 class="font-semibold text-signal-white text-xl">Scale Without Compromise</h3>
+                                    <p class="text-lunar-silver text-base">Designed for massive enterprise and multi-agency deployments.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="text-lg font-medium text-signal-white mt-10 italic">
+                            This isn't Android security ported over. This isn't desktop EDR bolted on. <strong>This is the first real EDR for iOS.</strong>
+                        </p>
+                    </div>
+
+                    <div class="relative hidden lg:block">
+                        <div class="bg-void-black p-8 rounded-2xl border border-orbital-blue/50 shadow-2xl shadow-orbital-blue/10 transform transition-all duration-500 hover:scale-[1.01] max-w-sm mx-auto">
+                            <div class="relative h-96 w-full bg-deep-navy rounded-lg p-4 flex flex-col justify-between">
+                                <div class="absolute top-0 left-0 right-0 h-1 bg-horizon-cyan animate-pulse rounded-t-lg"></div>
+                                <div class="text-center">
+                                    <p class="text-sm font-light text-lunar-silver">Live Endpoint Monitoring</p>
+                                    <h3 class="text-3xl font-bold text-signal-white mt-1">iOS Fleet Status</h3>
+                                </div>
+                                
+                                <div class="space-y-4">
+                                    <div class="p-3 bg-void-black rounded-lg border-l-4 border-green-500 flex items-center justify-between">
+                                        <p class="text-signal-white">Device ID: 45A-88B</p>
+                                        <span class="text-sm text-green-400">STATUS: CLEAN</span>
+                                    </div>
+                                    <div class="p-3 bg-void-black rounded-lg border-l-4 border-yellow-500 flex items-center justify-between">
+                                        <p class="text-signal-white">Device ID: 10C-23D</p>
+                                        <span class="text-sm text-yellow-400">STATUS: WARNING</span>
+                                    </div>
+                                    <div class="p-3 bg-void-black rounded-lg border-l-4 border-red-600 flex items-center justify-between">
+                                        <p class="text-signal-white font-bold">Device ID: 77E-99F</p>
+                                        <span class="text-sm text-red-500 font-bold">STATUS: CRITICAL</span>
+                                    </div>
+                                </div>
+
+                                <div class="text-center text-xs text-lunar-silver/70">
+                                    Data secured by LunarOS Engine v1.2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="validation" class="py-20 md:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-signal-white">Validated by Those Who Matter Most</h2>
+                <div class="h-1 w-20 bg-orbital-blue mx-auto mb-12"></div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="p-6 bg-deep-navy rounded-xl border border-deep-navy hover:border-horizon-cyan transition duration-300 transform hover:scale-[1.02]">
+                        <p class="text-3xl mb-2">⭐</p>
+                        <h3 class="font-semibold text-xl text-signal-white">Federal Funding</h3>
+                        <p class="text-lunar-silver text-sm mt-1">SBIR Phase II funded by the U.S. DoD.</p>
+                    </div>
+                    <div class="p-6 bg-deep-navy rounded-xl border border-deep-navy hover:border-horizon-cyan transition duration-300 transform hover:scale-[1.02]">
+                        <p class="text-3xl mb-2">🤝</p>
+                        <h3 class="font-semibold text-xl text-signal-white">Key Partnerships</h3>
+                        <p class="text-lunar-silver text-sm mt-1">Active collaboration with Secret Service and major federal agencies.</p>
+                    </div>
+                    <div class="p-6 bg-deep-navy rounded-xl border border-deep-navy hover:border-horizon-cyan transition duration-300 transform hover:scale-[1.02]">
+                        <p class="text-3xl mb-2">🎖️</p>
+                        <h3 class="font-semibold text-xl text-signal-white">Expert Leadership</h3>
+                        <p class="text-lunar-silver text-sm mt-1">Advisory board includes former NSA Deputy Director George Barnes.</p>
+                    </div>
+                    <div class="p-6 bg-deep-navy rounded-xl border border-deep-navy hover:border-horizon-cyan transition duration-300 transform hover:scale-[1.02]">
+                        <p class="text-3xl mb-2">💼</p>
+                        <h3 class="font-semibold text-xl text-signal-white">Trusted Integrators</h3>
+                        <p class="text-lunar-silver text-sm mt-1">Trusted by federal systems integrators: WWT, Carahsoft.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="py-20 md:py-28 bg-deep-navy border-t border-b border-void-black">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-signal-white">
+                    Stop Flying Blind.
+                </h2>
+                <p class="text-xl text-lunar-silver mb-10 font-light">
+                    Your iOS devices are part of your critical infrastructure. <strong>It's time to treat them that way.</strong> Secure your mission.
+                </p>
+                <a href="#contact" class="px-10 py-5 bg-orbital-blue text-signal-white text-xl font-extrabold rounded-xl hover:bg-[#3d53d9] transition duration-300 shadow-2xl shadow-orbital-blue/40 transform hover:scale-[1.05] active:scale-[0.98] transition-transform">
+                    Request a Demo Today
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 md:py-32">
+            <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-signal-white">Connect with Lunar Defense</h2>
+                <p class="text-xl text-lunar-silver mb-12 font-light">
+                    Ready to implement the first real EDR for iOS? Let's discuss your security requirements.
+                </p>
+                
+                <div class="space-y-6">
+                    <div class="p-4 bg-deep-navy rounded-lg border border-orbital-blue/30 shadow-lg">
+                        <p class="text-sm font-medium text-lunar-silver uppercase tracking-wider">Email</p>
+                        <a href="mailto:potts@lunardefense.co" class="text-2xl font-semibold text-orbital-blue hover:text-horizon-cyan transition duration-300">
+                            potts@lunardefense.co
+                        </a>
+                    </div>
+                    <div class="p-4 bg-deep-navy rounded-lg border border-orbital-blue/30 shadow-lg">
+                        <p class="text-sm font-medium text-lunar-silver uppercase tracking-wider">Phone</p>
+                        <a href="tel:+17278551007" class="text-2xl font-semibold text-orbital-blue hover:text-horizon-cyan transition duration-300">
+                            (727) 855-1007
+                        </a>
+                    </div>
+                </div>
+
+                <p class="mt-12 text-lunar-silver text-sm">
+                    For faster response, we recommend sending an email detailing your agency and security needs.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-void-black border-t border-deep-navy py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-lunar-silver">&copy; 2025 Lunar Defense. All rights reserved. Endpoint Security, Engineered for iOS.</p>
+            <div class="flex justify-center space-x-6 mt-4 text-sm text-lunar-silver">
+                <a href="#hero" class="hover:text-orbital-blue transition duration-300">Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
