@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Lunar Lite</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'void-black': '#0A0B0F',
+                        'deep-navy': '#1A1D28',
+                        'orbital-blue': '#4B63F5',
+                        'lunar-silver': '#A8B2C8',
+                        'signal-white': '#FAFBFC',
+                        'horizon-cyan': '#00D9FF',
+                    },
+                    fontFamily: {
+                        sans: ['IBM Plex Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Apply IBM Plex Sans globally */
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            background-color: #0A0B0F; /* Void Black */
+            color: #FAFBFC; /* Signal White */
+        }
+
+        /* Subtle Dark Gradient Overlay for depth */
+        .gradient-bg {
+            background-color: #0A0B0F;
+            background-image: radial-gradient(at 0% 0%, rgba(75, 99, 245, 0.15) 0%, transparent 50%), 
+                              radial-gradient(at 100% 100%, rgba(26, 29, 40, 0.5) 0%, transparent 70%);
+        }
+        
+        /* Ensure all headers use the secondary accent color */
+        h2, h3 {
+            color: #4B63F5; /* Orbital Blue */
+        }
+    </style>
+</head>
+<body class="gradient-bg antialiased">
+
+    <header class="sticky top-0 z-50 bg-void-black/95 backdrop-blur-sm border-b border-deep-navy shadow-lg">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <svg width="32" height="36" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Lunar Defense Monogram</title>
+                        <defs>
+                            <path d="M0,0 L246.344195,0 L246.344195,272.681453 L0,272.681453 L0,0 Z" id="path-1"></path>
+                        </defs>
+                        <g stroke="none" fill="none" fill-rule="evenodd">
+                            <g transform="translate(27, 14)" xlink:href="#path-1" fill="#FAFBFC">
+                                <path d="M163.564191,1.3407301 C207.987662,1.3407301 244,61.7822889 244,136.34073 C244,210.899171 207.987662,271.34073 163.564191,271.34073 C163.304665,271.34073 163.045425,271.338667 162.786478,271.334551 C179.344579,250.006202 190.376128,211.840323 190.376128,168.306247 C190.376128,101.460748 164.367217,47.2717646 132.283599,47.2717646 C114.540749,47.2717646 98.6557267,63.8443823 88,89.9652393 C99.2698137,38.2518581 128.8487,1.3407301 163.564191,1.3407301 Z" id="Combined-Shape" transform="translate(166.0002, 136.3407) rotate(1) translate(-166.0002, -136.3407)"></path>
+                                <path d="M26.6595801,1.34072655 L68.0688562,1.34072655 C72.4871342,1.34072655 76.0688562,4.92244855 76.0688562,9.34072655 C76.0688562,9.58400934 76.0577587,9.82716551 76.0355984,10.0694369 L58.0247074,206.976371 C57.8234796,209.176326 59.4437682,211.12287 61.6437233,211.324098 C61.764859,211.335178 61.8864371,211.340727 62.0080785,211.340727 L148.863101,211.340725 C148.864889,211.340727 148.866677,211.340727 148.868465,211.340725 C162.956155,211.341093 170,214.341093 170,220.340727 C170,229.340727 160,261.340727 147.90546,271.340727 C101.46676,271.340727 55.0280603,271.340727 8.5893603,271.340727 C4.17108231,271.340727 0.589360305,267.759005 0.589360305,263.340727 C0.589360305,263.151312 0.596087395,262.961957 0.609528855,262.773021 L18.6797486,8.77302061 C18.9776513,4.58561845 22.4615945,1.34072655 26.6595801,1.34072655 Z" id="Rectangle-2"></path>
+                            </g>
+                        </g>
+                    </svg>
+                    <span class="text-2xl font-bold text-signal-white">Lunar Defense</span>
+                </a>
+                <a href="index.html" class="px-4 py-2 bg-orbital-blue text-signal-white rounded-lg hover:bg-[#3d53d9] transition duration-300 font-semibold shadow-xl shadow-orbital-blue/20 text-sm">
+                    Home
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-20 md:py-32">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-lunar-silver leading-relaxed">
+            
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-signal-white mb-2">Lunar Lite | Privacy Policy</h1>
+            <p class="text-lg text-orbital-blue font-semibold mb-12">Last Updated: December 2025</p>
+
+            <p class="mb-8">
+                Lunar Lite ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains what information our app collects, how we use it, and the choices you have. Lunar Lite is a device-based security application that uses on-device AI models to analyze basic system behavior and provide security insights. 
+                We do not collect, transmit, sell, or share any personal data. All analysis occurs locally on your device.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-10 mb-4">1. Information We Collect</h2>
+            <p class="mb-6">
+                Lunar Lite only collects a very limited set of device metrics, all of which remain on your device and are used solely to operate our on-device AI detection engines. We do not collect any personally identifiable information.
+            </p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">1.1 Device Behavior Telemetry (On-Device Only)</h3>
+            <p class="mb-4">Lunar Lite processes the following telemetry locally:</p>
+            <ul class="list-disc list-inside space-y-2 ml-4 mb-8">
+                <li>Screen-time activity (total minutes active during each session)</li>
+                <li>Battery level changes (to infer unusual background drain patterns)</li>
+                <li>Disk usage deltas (to detect abnormal local file growth)</li>
+                <li>App-launch frequency (to detect unexpected activity)</li>
+                <li>DNS hostnames queried by the device</li>
+                <li>File extension frequencies within Lunar Lite's own sandbox (e.g., .so, js, .sh, .zip)</li>
+            </ul>
+            <p class="mb-8 font-medium text-signal-white">
+                All telemetry stays on your device and never leaves it.
+            </p>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">1.2 No Sensitive Data</h3>
+            <p class="mb-4">We do not collect:</p>
+            <ul class="list-disc list-inside space-y-2 ml-4 mb-8">
+                <li>Contacts</li>
+                <li>Photos</li>
+                <li>Messages</li>
+                <li>Browsing history</li>
+                <li>Location</li>
+                <li>Installed apps list</li>
+                <li>Device identifiers (IDFA, IDFV)</li>
+                <li>Email, name, or phone number</li>
+                <li>Advertising information</li>
+            </ul>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">1.3 No Tracking</h3>
+            <p class="mb-4">Lunar Lite does not:</p>
+            <ul class="list-disc list-inside space-y-2 ml-4 mb-8">
+                <li>Track users across apps or websites</li>
+                <li>Use third-party analytics</li>
+                <li>Use ad networks or marketing trackers</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold mt-10 mb-4">2. How We Use Information</h2>
+            <p class="mb-4">
+                All telemetry is processed exclusively on your device using CoreML models for the purpose of:
+            </p>
+            <ul class="list-disc list-inside space-y-2 ml-4 mb-8">
+                <li>Detecting behavioral anomalies</li>
+                <li>Flagging potentially malicious DNS patterns</li>
+                <li>Identifying malware-like activity inside the app sandbox</li>
+                <li>Providing you with on-device security insights</li>
+                <li>Enforcing sweep limits (free tier) or unlocking unlimited sweeps (paid tier)</li>
+            </ul>
+            <p class="mb-8 font-medium text-signal-white">
+                No telemetry is transmitted to our servers or stored off device.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-10 mb-4">3. Data Storage & Retention</h2>
+            <p class="mb-4">
+                Lunar Lite stores only small, temporary telemetry measurements within the app sandbox.
+            </p>
+            <p class="mb-4">We do not:</p>
+            <ul class="list-disc list-inside space-y-2 ml-4 mb-8">
+                <li>Upload data to cloud servers</li>
+                <li>Create user accounts</li>
+                <li>Maintain remote logs</li>
+                <li>Sync information across devices</li>
+            </ul>
+            <p class="mb-8">
+                All telemetry resets periodically and is fully deleted if you uninstall the app.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-10 mb-4">4. Subscription & Payment Information</h2>
+            <p class="mb-4">If you choose to upgrade to a paid plan:</p>
+            <ul class="list-disc list-inside space-y-2 ml-4 mb-8">
+                <li>Payments are processed securely through Apple's In-App Purchase system.</li>
+                <li>We do not receive or store your payment information.</li>
+                <li>Apple may provide anonymized subscription status to the app (e.g., active/inactive).</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold mt-10 mb-4">5. Children's Privacy</h2>
+            <p class="mb-4">
+                Lunar Lite is safe for all ages and collects no personal data.
+            </p>
+            <p class="mb-4">For parents who choose to enable expanded protection through supported MDM enrollment:</p>
+            <ul class="list-disc list-inside space-y-2 ml-4 mb-8">
+                <li>All advanced telemetry remains on the child's device.</li>
+                <li>No telemetry flows to Lunar Lite, Lunar Defense LLC, or third parties.</li>
+                <li>Parents retain full control over MDM enrollment and removal.</li>
+            </ul>
+            <p class="mb-8">
+                We do not knowingly collect personally identifiable information from children.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-10 mb-4">6. Data Sharing</h2>
+            <p class="mb-4">Lunar Lite does not share, sell, rent, or transfer any information to:</p>
+            <ul class="list-disc list-inside space-y-2 ml-4 mb-8">
+                <li>Third parties</li>
+                <li>Advertisers</li>
+                <li>Data brokers</li>
+                <li>Governments</li>
+                <li>Cloud services</li>
+            </ul>
+            <p class="mb-8 font-medium text-signal-white">
+                There is no scenario in which your telemetry leaves your device.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-10 mb-4">7. Security</h2>
+            <p class="mb-4">
+                Lunar Lite uses Apple's secure sandboxing and on-device machine learning frameworks. All detection happens offline with:
+            </p>
+            <ul class="list-disc list-inside space-y-2 ml-4 mb-8">
+                <li>No servers</li>
+                <li>No databases</li>
+                <li>No transmissions</li>
+                <li>No remote logging</li>
+            </ul>
+            <p class="mb-8">
+                Your device handles all processing internally.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-10 mb-4">8. Your Choices</h2>
+            <p class="mb-4">You may:</p>
+            <ul class="list-disc list-inside space-y-2 ml-4 mb-8">
+                <li>Use Lunar Lite without creating an account</li>
+                <li>Disable notifications at any time</li>
+                <li>Uninstall the app to delete all stored telemetry</li>
+                <li>Choose free tier or paid tier</li>
+            </ul>
+            <p class="mb-8">
+                There are no user data exports because we do not collect or store your information.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-10 mb-4">9. Changes to This Privacy Policy</h2>
+            <p class="mb-8">
+                We may update this Privacy Policy as Lunar Lite evolves. Material changes will be reflected by updating the "Last Updated" date above.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-10 mb-4">10. Contact Us</h2>
+            <p class="mb-4">
+                If you have questions about this Privacy Policy or Lunar Lite's security practices, you may contact us at:
+            </p>
+            <div class="space-y-3 bg-deep-navy p-6 rounded-lg border border-orbital-blue/30">
+                <p class="text-signal-white font-semibold">Lunar Defense LLC</p>
+                <p class="text-orbital-blue"><span class="text-lunar-silver font-medium">Email:</span> <a href="mailto:support@lunardefense.co" class="hover:text-horizon-cyan">support@lunardefense.co</a></p>
+                <p class="text-orbital-blue"><span class="text-lunar-silver font-medium">Website:</span> <a href="https://lunardefense.co" class="hover:text-horizon-cyan">https://lunardefense.co</a></p>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="bg-void-black border-t border-deep-navy py-10 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-lunar-silver">&copy; 2025 Lunar Defense. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4 text-sm text-lunar-silver">
+                <a href="index.html" class="hover:text-orbital-blue transition duration-300">Home</a>
+                <a href="#" class="hover:text-orbital-blue transition duration-300">Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
